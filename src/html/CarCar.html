@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>我的购物车</title>
+        <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="../css/base.css" />
+        <link rel="stylesheet" type="text/css" href="../css/homepage.css" />
+        <link rel="stylesheet" type="text/css" href="../css/car.css" />
+        <script src="../js/require.js" data-main="../js/require_car.js"></script>
+    </head>
+    <body>
+<!-- 顶部菜单 -->
+        <header id="header" class="">
+            <nav class="nav_top con">
+                <div class="notice">
+                    <span>公告</span>
+                    <ul>
+                        <li><a>1</a></li>
+                        <li><a>【公告】防诈骗提醒</a></li>
+                        <li><a>【紧急通知】关于短信发送异常的公告</a></li>
+                    </ul>
+                </div>
+                <ul class="denglu">
+                    <li><a class='zhucel' href="reg.html">注册</a>|</li>
+                    <li><a style="cursor:pointer;" class='denglul' href="login.html">登入</a>|</li>
+                    <li><a href="javascript:void(0)">我的订单</a>|</li>
+                    <li><a href="javascript:void(0)">我的关注</a>|</li>
+                    <li><a href="javascript:void(0)">资讯</a>|</li>
+                    <li><a href="javascript:void(0)">品牌馆</a>|</li>
+                    <li><a href="javascript:void(0)"><img src="../css/img/phone.png" width="9" height="12"/>手机优品惠</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    <div class="con carcar">
+        <div class="car_til">
+            <img src="../img/carcar.PNG" alt="" />
+        </div>
+        <div class="car_con">
+            <p>我的购物车</p>
+            <ul class="cart_con_tit clearfix">
+                <li class="tit_check">
+                    <label>
+                        <input type="checkbox" checked="checked" data-role="all" name="btnFx" id="btnFx">
+                    全选</label>
+                </li>
+                <li class="tit_meg">商品信息</li>
+                <li class="tit_price">单价（元）</li>
+                <li class="tit_quantity">数量</li>
+                <li class="tit_sum">小计（元）</li>
+                <li class="tit_action">操作</li>
+            </ul>
+            <div class="cart_split">
+                <!-- 是否自营 -->
+                <div class="cart_split_tt">
+                    <input type="checkbox" data-role="block" target="ec" checked="checked">
+                    <i class="icon_home"></i>
+                    <label>优品惠自营</label>
+                    <span>满168包邮</span>
+                </div>
+                <!-- 每个商品 -->
+                <div class="shopping_con clearfix" data-role="product" data-attr="">
+                    <div class="c_meg">
+                        <dl>
+                            <dt>
+                                <a href="/goods-139864.html">
+                                    <img src="../img/goods5_1.jpg" width="78" height="78">
+                                </a>
+                            </dt>
+                            <dd>
+                                <p class="m_tit"><a href="#">新西兰原装进口Pharmalab 草莓酱</a></p>
+                            </dd>
+                        </dl>
+                </div>
+                <div class="c_price">
+                    <p class="c_price_num">¥<i>298</i></p>
+                </div>
+                <div class="c_quantity">
+                    <div class="c_amount clearfix">
+                        <a href="javascript:void(0)" class="disabled">-</a>
+                        <input type="text" name="amt" value="1">
+                        <a href="javascript:void(0)">+</a>
+                    </div>
+                </div>
+                <div class="c_sum">
+                    <p>¥<i>298</i></p>
+                </div>
+                <div class="c_action">
+                    <i class="i_del" data-role="del">删除</i>
+                </div>
+                <div class="c_check">
+                    <input data-role="product" type="checkbox" checked="checked"></div>
+                </div>
+                <!-- 每个商品结束 -->
+            </div>
+            <!-- 底部结算按钮box -->
+            <div class="cart_con">
+                <div class="c_balance">
+                    <div class="c_count">
+                        <p class="c_clearfix">
+                            <span class="c_rt">¥<i class="fs_14">298</i></span>
+                            <span class="c_lt">商品金额：</span>
+                            <span class="c_piece">共<i>1</i>件商品</span>
+                        </p>
+                        <p class="c_clearfix">
+                            <span class="c_rt">－¥<i class="fs_14">10</i></span>
+                            <span class="c_lt">优惠金额：</span>
+                        </p>
+                        <p class="c_clearfix">
+                            <span class="c_rt c_paid">¥<i>288</i></span>
+                            <span class="c_lt fw_b">实付金额：</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="bot_jie clearfix">
+
+                    <div class="fl">
+                        <button id="Del" style='font-size:18px;width:200px;height:51px;position:relative;top:-18px;left:-20px;font-weight:900;font-family:"楷体";background:#FF504A;color:#fff;cursor:pointer;'>清空购物车？</button>
+                        <button id="Delt" style='font-size:16px;width:100px;height:51px;position:relative;top:-17px;left:-20px;font-weight:900;font-family:"楷体";background:#FF504A;display:none;color:#fff;cursor:pointer;'>残忍清空</button>
+                        <button id="Deltt" style='font-size:16px;width:100px;height:51px;position:relative;top:-17px;left:-20px;font-weight:900;font-family:"楷体";background:#FF504A;display:none;color:#fff;cursor:pointer;'>我再想想</button>
+                    </div>
+                    <div class="fr">
+                        <a href="" class="balance_bt">立即结算</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- 底部 -->
+<footer>
+    <div class="con footer_box">
+        <img src="../img/footer_ad.jpg" height="102" width="1000" alt="" />
+    </div>
+    <div class="con footer_flist">
+        <dl>
+            <dt>新手上路</dt>
+            <dd><a href="">新用户注册</a></dd>
+            <dd><a href="">忘记密码</a></dd>
+            <dd><a href="">购物流程</a></dd>
+        </dl>
+        <dl>
+            <dt>支付配送</dt>
+            <dd><a href="">货到付款</a></dd>
+            <dd><a href="">支付宝</a></dd>
+            <dd><a href="">配送方式</a></dd>
+        </dl>
+        <dl>
+            <dt>会员服务</dt>
+            <dd><a href="">服务承诺</a></dd>
+            <dd><a href="">会员制度</a></dd>
+            <dd><a href="">积分制度</a></dd>
+            <dd><a href="">退换货原则</a></dd>
+        </dl>
+        <dl>
+            <dt>关于惠优品</dt>
+            <dd><a href="">企业介绍</a></dd>
+            <dd><a href="">联系我们</a></dd>
+            <dd><a href="">招商专区</a></dd>
+        </dl>
+        <dl class="flistdl2">
+            <dt class="fl"><img src="../img/foot_ewm.jpg" height="80" width="80" alt="" />
+            <i class="font12">手机优品惠</i>
+            <em class="font13">（优购物）</em></dt>
+            <dd class="fl f2f"><img src="../img/foot_dh.jpg" height="38" width="149" alt="" /></dd>
+        </dl>
+    </div>
+    <div class="footer_info">
+        <p class="footer-list"><a target="_blank" href="http://www.ugoshop.com">首页</a> | 
+        <a target="_blank">关于优品惠</a> |
+        <a target="_blank">优购物</a> |
+        <a target="_blank">联系我们</a> | 
+        <a target="_blank">招贤纳士</a> | 
+        <a target="_blank">招商专区</a> | 
+        <a target="_blank">供应商入口</a> |
+        <a target="_blank">新人培训</a> |
+        <a target="_blank">友情链接</a> | 
+        <a target="_blank">网站地图</a> | 
+        <a target="_blank">资讯中心</a> | 
+        <a target="_blank">评论</a> |
+        <a target="_blank"> 图片</a>
+        </p>
+        <p class="copyright">优品_优品惠（优购物）全球优品特卖网站 专属于千万女性的优品特卖网站,优品_优品惠（优购物）电视购物官方网站,100%正品保证 支持货到付款.</p>
+        <p class="copyright">Copyright©2007-2017 &nbsp;  公司名称:北京优品惠网络科技有限公司    &nbsp;   公司地址:北京市北京经济技术开发区同济南路19号7幢2层C区   服务热线：400-707-0707</p>
+        <p class="footer-list copyright"> 统一社会信用代码:91110302339739621C  &nbsp;  ICP备案号:京ICP备15039150号-1   &nbsp;  食品流通许可证编号:JY11131010332635 &nbsp;
+        <a>营业执照</a>
+        <a>京网文(2017)10902-1271</a>
+        <a>增值业务经营许可证：京B2-20181380 </a>
+        </p>
+        <div style="margin:0 auto;text-align:center;">
+            <a style="display:inline-block;text-decoration:none;height:22px;line-height:22px;">
+            <img src="../img/bei.png" style="float:left;">
+            <p style="float:left;margin: 0px 0px 0px 5px; color:#555;">京公网安备 11030102000055号</p>
+            </a>        
+        </div>
+    </div>
+</footer>
+
+
+
+<!-- //全选反选 -->
+    <script type="text/javascript">
+        var btnFx = document.getElementById('btnFx');
+        var hobby = document.getElementsByName('hobby');
+        // console.log(hobby)
+        btnFx.onclick = function(){
+            for(var i=0;i<hobby.length;i++){
+                hobby[i].checked = btnFx.checked;
+            }
+        }
+        for(var i=0;i<hobby.length;i++){
+            hobby[i].onclick = function(){
+                btnFx.checked = isCheckAll();
+            }
+        }
+        function isCheckAll(){
+            // 假设hobby全部勾选
+            var res = true;
+            for(var i=0;i<hobby.length;i++){
+                if(!hobby[i].checked){
+                    res = false;
+                    break;
+                }
+            }
+            return res;
+        }
+    </script>
+
+
+    </body>
+</html>
